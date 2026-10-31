@@ -1,0 +1,17 @@
+{
+  "_comment": "提交给 awesome-dsh-plugin 目录的一条条目。category 取值要用该目录 categories 里已有的 id（如 plugin/tools/ui），提交前按仓库当前的 categories 改；added 用实际 PR 日期。",
+  "name": "dsh-plugin-namer",
+  "owner": "otm1998",
+  "url": "https://github.com/otm1998/dsh-plugin-namer",
+  "category": "plugin",
+  "description": {
+    "zh": "给已安装的第三方插件改名，写进它自己的语言元数据，「已安装」列表直接显示新名字；每个改动留备份，可一键还原。",
+    "en": "Rename installed third-party dsh plugins by writing their own locale metadata, so the Plugins list shows your names. Every file it touches keeps a backup."
+  },
+  "npm": "dsh-plugin-namer",
+  "install": "dsh plugin --profile <profile> add dsh-plugin-namer",
+  "added": "2026-11-01",
+  "capabilities": [
+    "fs-write"
+  ]
+}

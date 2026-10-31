@@ -1,0 +1,65 @@
+{
+  "name": "dsh-plugin-namer",
+  "version": "1.0.0",
+  "description": "给已安装的第三方插件起自己的名字：写进它自己的语言元数据，「已安装」列表里就直接显示这个名字。",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "YG"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin",
+    "rename",
+    "naming",
+    "metadata",
+    "locale"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.11",
+    "dsh": ">=0.2.1-rc.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otm1998/dsh-plugin-namer.git"
+  },
+  "homepage": "https://github.com/otm1998/dsh-plugin-namer#readme",
+  "bugs": {
+    "url": "https://github.com/otm1998/dsh-plugin-namer/issues"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Plugin Naming",
+    "description": "List the third-party plugins you installed and write your name into each plugin's own locale metadata, so the Plugins list shows it. Restore anytime. Bundled official plugins stay out of the list."
+  }
+}

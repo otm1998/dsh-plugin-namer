@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Plugin Namer">
+  <defs>
+    <linearGradient id="pn-plate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f2a3a"/>
+      <stop offset="1" stop-color="#0f1724"/>
+    </linearGradient>
+    <linearGradient id="pn-ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4d9cff"/>
+      <stop offset="1" stop-color="#7ee0c6"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#pn-plate)"/>
+  <rect x="2.75" y="2.75" width="58.5" height="58.5" rx="14.25" fill="none" stroke="#4d9cff" stroke-opacity="0.35" stroke-width="1.5"/>
+  <g fill="none" stroke="url(#pn-ink)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 15h12a5 5 0 0 1 5 5v12L32.4 46.6a5 5 0 0 1-7.07 0l-6.93-6.93a5 5 0 0 1 0-7.07L30 15Z"/>
+    <circle cx="40.5" cy="23.5" r="2.4" fill="url(#pn-ink)" stroke="none"/>
+  </g>
+  <path d="M22 40.5 43 19.5" fill="none" stroke="#0f1724" stroke-width="5.4" stroke-linecap="round" opacity="0.92"/>
+  <path d="M21.5 41 42.5 20" fill="none" stroke="url(#pn-ink)" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M19 43.5c-2.4.6-4.2 2.3-5 4.7 2.6-.3 4.4-.1 6-1.1" fill="none" stroke="#7ee0c6" stroke-width="2.2" stroke-linecap="round"/>
+</svg>
