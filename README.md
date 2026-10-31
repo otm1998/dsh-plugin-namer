@@ -20,13 +20,19 @@ dsh 的插件标题来自包里的 `locale/*.json`（`meta.title`）。很多插
 
 ## 安装
 
-在 dsh 里安装（dsh 0.2.1+）：
+**从 GitHub 直接装**（不需要经过 npm，dsh 0.2.1+）：
 
 ```
-dsh plugin --profile <你的 profile> add dsh-plugin-namer
+dsh plugin --profile <你的 profile> add github:otm1998/dsh-plugin-namer
 ```
 
-或者在应用里：**插件 → 发现 / 市场 → 搜索 dsh-plugin-namer → 安装**。
+也可以下载 Release 里的 `dsh-plugin-namer-1.0.0.tgz` 后本地装：
+
+```
+dsh plugin --profile <你的 profile> add <解压或存放的路径>/dsh-plugin-namer-1.0.0.tgz
+```
+
+在桌面端也可以直接把仓库地址填进 **插件 → 安装** 的输入框。
 
 装好后打开 **插件 → 命名** 标签。
 
@@ -86,8 +92,10 @@ dsh plugin --profile <profile> add "$PWD"
 **dsh-plugin-namer** renames your installed third-party dsh plugins for real: the name is written into that plugin's own `locale/*.json` (`meta.title`), so the Plugins → Installed list shows it. Every touched file keeps a `.plugin-namer.bak` original, and *Clear* restores it byte for byte.
 
 ```bash
-dsh plugin --profile <profile> add dsh-plugin-namer
+dsh plugin --profile <profile> add github:otm1998/dsh-plugin-namer
 ```
+
+No npm package required — the GitHub source is the distribution channel. A release tarball (`dsh-plugin-namer-1.0.0.tgz`) is attached to the latest release if you prefer a fixed snapshot.
 
 - Lists third-party plugins only (bundled official plugins are hidden by default; `showBundled: true` on this plugin's row reveals them)
 - Shows each plugin's own description, two-line clamp, click to expand
